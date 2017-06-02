@@ -13,3 +13,7 @@ rc-update add docker boot
 service docker start
 
 chsh -s /bin/bash root
+
+/etc/init.d/open-vm-tools start
+
+rc-update add open-vm-tools boot
