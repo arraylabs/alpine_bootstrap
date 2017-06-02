@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "http://mirrors.gigenet.com/alpinelinux/edge/community" >> /etc/apk/repositories
 apk update
-apk add open-vm-tools bash bash-completion vim sudo docker shadow
+apk add open-vm-tools bash bash-completion vim sudo docker shadow cifs-utils
 	
 adduser -s /bin/bash chris -G wheel
 
