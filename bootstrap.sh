@@ -8,6 +8,8 @@ adduser -s /bin/bash chris -G wheel
 echo "chris ALL=(ALL) ALL" >> /etc/sudoers
 
 addgroup chris docker
+addgroup chris
+addgroup chris chris
 
 rc-update add docker boot
 service docker start
